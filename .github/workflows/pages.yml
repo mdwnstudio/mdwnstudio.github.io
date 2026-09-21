@@ -26,7 +26,5 @@ jobs:
       - uses: actions/upload-pages-artifact@v3
         with:
           path: .
-          # dotfiles are skipped by default; .well-known must ship
-          include-hidden-files: true
       - id: deployment
         uses: actions/deploy-pages@v5
